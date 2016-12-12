@@ -1,0 +1,210 @@
+
+html {
+    background: gray;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+body { 
+ 
+  margin: 0 auto;
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  padding: 0;
+}
+
+  * {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  }
+
+.pageContainer { 
+    width: 100%;
+    margin: 0 auto;
+    background: blue;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+.logo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: black;
+    background-color:antiquewhite;
+  }
+
+  nav {
+    position: fixed;
+    top: 35px;
+    width: 100%;
+    margin: 0 auto;
+    background: yellow;
+    left: 0;
+    right: 0;
+    list-style: none;
+    height: 35px;
+    text-align: center;
+  }
+
+  ul { 
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   background: #00eeaf;
+  }
+  
+  li {
+    padding: 0;
+    display: inline-block;
+    margin: 0 auto;
+    height: 35px;
+    text-decoration: none;
+    color: red;
+  }
+
+li:hover {
+  background: #aafeaf;
+  text-decoration: none;
+  color: white;
+}
+    
+  a {
+    color: #005500;
+    display: inline-block;
+    margin-left: -4px;
+    padding: 0 25px;
+    text-decoration: none;
+    line-height: 35px;
+    border: 0;
+  }
+  
+  a:hover{
+    color: red;
+  }
+
+
+  #proba{
+    background-color: red;
+    height: 50px;
+    line-height: 50px;
+  }
+/*
+  a.main-menu {
+    display: inline-block;
+    //position: relative;
+    //top: -18px;
+    text-align: center;
+    
+    //display: block;
+    color: blue;
+    text-decoration: none;
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    margin-left: -5px; 
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: -25px;
+    padding-bottom: 0px;
+    overflow: hidden;
+  }
+*/
+  
+  a.main-menu:hover {
+    background-color: #ffffb5;
+    color: red;
+  }
+
+  body#mainpage a#item1,
+  body#allreportspage a#item2,
+  body#addreportpage a#item3 {
+    background: #00d5aa;
+    color: navy;
+  }
+
+ body#mainpage a#item1:hover,
+ body#allreportspage a#item2:hover,
+  body#addreportpage a#item3:hover {
+    background-color: #ffffb5;
+  }
+
+.content {
+    position: absolute;
+    background-color: white;  
+    width: 70%;
+    top: 70px;
+    margin: 0 auto;
+    left:0;
+    right:0;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 0;   
+    z-index: -1;
+    min-height: 650px;
+}
+
+a.output {
+  font-size: 16px;
+}
+
+.report_content{
+  color: darkblue;
+  width: 50%;
+  border: solid 1px;
+  border-radius: 5px;
+  margin-left: 30px
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background-color:#555555;
+  height: 50px;
+  color: white;
+  padding-left: 35px;
+  line-height: 35px; 
+}
+
+@media screen and (max-width: 580px){
+  ul {
+    display: block;
+    font-size: 16px;
+  }
+  #pageContainer { 
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  li {
+    display: block;
+    margin-left: -35px;
+  }
+  .logo,
+  .content,
+  .footer,
+  a,
+  nav{
+    width: 100%;
+    margin: 0;
+  }
+  ul {margin-left: 0;}
+  nav{
+    height: 100px;
+  }
+}
+
